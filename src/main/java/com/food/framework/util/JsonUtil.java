@@ -1,0 +1,1 @@
+package com.food.framework.util;import com.alibaba.fastjson.JSON;/** * Created by user on 16-11-11. */public class JsonUtil {    public static String toJSONString(Object object) {        return JSON.toJSONString(object);    }    public static <T> T parseObject(String source, Class<T> clazz) {        return JSON.parseObject(source, clazz);    }}
